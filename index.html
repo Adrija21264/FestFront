@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tech Fest Events</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  
+  <header>
+    <h1>Tech Fest 2025</h1>
+    <p>Explore the most exciting events & register instantly!</p>
+  </header>
+
+  
+  <section>
+    <h2 class="section-title ongoing">Ongoing Events</h2>
+    <div class="event-container">
+
+     
+      <div class="event-card" onclick="openModal('aiWorkshop')">
+        <img src="https://via.placeholder.com/400x200/ff7e29/ffffff?text=AI+Workshop" alt="AI Workshop">
+        <h2>AI Workshop</h2>
+        <p><strong>Date:</strong> 10th Oct 2025</p>
+        <p>Learn AI basics and build smart apps in this interactive workshop.</p>
+        <button onclick="openModal('aiWorkshop'); event.stopPropagation();">Register</button>
+      </div>
+
+    </div>
+  </section>
+
+ 
+  <section>
+    <h2 class="section-title past">Past Events</h2>
+    <div class="event-container">
+
+      <div class="event-card" onclick="openModal('pivotChallenge')">
+        <img src="https://via.placeholder.com/400x200/ffae00/ffffff?text=Strategic+Pivot+Challenge" alt="Pivot Challenge">
+        <h2>Strategic Pivot Challenge</h2>
+        <p><strong>Date:</strong> 17th Aug 2025</p>
+        <p>Step into the shoes of elite consultants and lead through crisis!</p>
+        <button onclick="openModal('pivotChallenge'); event.stopPropagation();">View Details</button>
+      </div>
+
+    </div>
+  </section>
+
+  
+  <div class="modal" id="aiWorkshop" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+      <button class="close-btn" onclick="closeModal('aiWorkshop')">&times;</button>
+      <img src="https://via.placeholder.com/600x300/ff7e29/ffffff?text=AI+Workshop" alt="AI Workshop">
+      <h2>AI Workshop</h2>
+      <p>
+        <strong>Date:</strong> 10th Oct 2025<br>
+        <strong>Type:</strong> Individual | Free<br><br>
+        Join us for a hands-on AI session to learn the basics of artificial intelligence,
+        machine learning, and building intelligent applications with real-world examples.
+      </p>
+
+      
+      <button type="button" class="register-btn">Register Now</button>
+      
+    </div>
+  </div>
+
+  
+  <div class="modal" id="pivotChallenge" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+      <button class="close-btn" onclick="closeModal('pivotChallenge')">&times;</button>
+      <img src="https://via.placeholder.com/600x300/ffae00/ffffff?text=Strategic+Pivot+Challenge" alt="Pivot Challenge">
+      <h2>Strategic Pivot Challenge</h2>
+      <p>
+        <strong>Date:</strong> 17th Aug 2025<br>
+        <strong>Team Size:</strong> 3–5 | Free<br><br>
+        In a race against time, teams act as elite consultants handling high-pressure
+        crisis simulations. Adapt, think fast, and strategize your company’s pivot to success.
+      </p>
+
+      
+      <button type="button" class="register-btn" disabled>Closed</button>
+    </div>
+  </div>
+
+  
+  <script src="script.js"></script>
+</body>
+</html>
